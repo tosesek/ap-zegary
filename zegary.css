@@ -1,0 +1,72 @@
+body {
+  background-color: silver;
+}
+
+#container {
+  background-color: lightgrey;
+  width: 1200px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+article img {
+  width: 400px;
+  height: 400px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.kontenerZegara {
+  width: 100%;
+  height: 400px;
+}
+.zegar {
+  width: 390px;
+  height: 390px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px black solid;
+  margin-inline: auto;
+}
+
+#wskazowkaSekund {
+  background-color: rgb(255, 0, 0);
+  width: 170px;
+  height: 6px;
+  position: relative;
+  top: calc(50% - 3px);
+  right: -6%;
+  z-index: 3;
+}
+
+#wskazowkaMinut {
+  background-color: black;
+  width: 150px;
+  height: 8px;
+  position: relative;
+  top: calc(calc(50% - 4px) - 6px);
+  z-index: 2;
+  right: -11%;
+  transform-origin: right;
+  transform: rotate(-70deg);
+}
+
+#wskazowkaGodzin {
+  background-color: black;
+  width: 120px;
+  height: 10px;
+  position: relative;
+  top: calc(calc(50% - 4px) - 14px);
+  z-index: 2;
+  right: -19%;
+  transform-origin: right;
+  transform: rotate(100deg);
+}
